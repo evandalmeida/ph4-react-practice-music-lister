@@ -1,6 +1,6 @@
 # Phase 4 React Practice - Music Lister
 
-Your goal here is to build a mini-project for a music list.
+Your goal here is to build a mini-project that'll record your favorite songs.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ You can start the project with `npm install` and `npm start`.
 
 ### Songs State
 
-There should be a **piece of state**, essentially a music list, for song entries. This should be an array of objects, each object representing a song with a title and artist. You may add additional attributes to your songs if you'd like.
+There should be a piece of state, essentially a music list, for song entries. This should be an array of objects, each object representing a song with a title and artist. You may add additional attributes to your songs if you'd like.
 
 ### Songs List Component
 
@@ -18,11 +18,11 @@ There ought to be a component that lists all of the songs in the music list. How
 
 ### Add Song Form
 
-There ought to be a **controlled form** in your application that allows you to add a new song to your songs state.
+There ought to be a controlled form in your application that allows you to add a new song to your songs state.
 
 ### Delete Song Button
 
-The songs in your songs list component ought to have a **delete song** button that allows you to remove the song from the songs list.
+The songs in your songs list component ought to have a delete song button that allows you to remove the song from the songs list.
 
 ### BONUS: Persistence
 
