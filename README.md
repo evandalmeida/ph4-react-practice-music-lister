@@ -1,6 +1,6 @@
 # Phase 4 React Practice - Music Lister
 
-Your goal here is to build a mini-project that'll record your favorite songs.
+Your goal here is to build a mini-project that'll list your favorite songs.
 
 ## Getting Started
 
