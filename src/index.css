@@ -1,17 +1,92 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.6;
+  transition: background-color 0.3s;
 }
 
 .App {
-  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #34495e;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden; /* To ensure elements do not overflow the container */
+  animation: fadeIn 1s; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  animation: slideIn 1s forwards; /* Slide in animation */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: calc(100% - 24px); /* Adjusting width to account for padding and borders */
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 2px solid #7f8c8d;
+  border-radius: 6px;
+  background: transparent;
+  color: #ecf0f1;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  background: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+.songlist {
+  list-style: none;
+  padding: 0;
+}
+
+.songlist > li {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #7f8c8d;
+  padding-bottom: 10px;
+  animation: popIn 0.5s forwards; /* Pop in animation */
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
