@@ -4,7 +4,7 @@ Your goal here is to build a mini-project that'll record your favorite songs.
 
 ## Getting Started
 
-You can start the project with `npm install` and `npm start`.
+First fork and clone the repository. You can start the project with `npm install` and `npm start`.
 
 ## Requirements
 
