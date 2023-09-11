@@ -26,7 +26,7 @@ The songs in your songs list component ought to have a delete song button that a
 
 ### BONUS: Persistence
 
-Build a db.json with this code inside of it:
+There is already a db.json with this code inside of it:
 
 ```
 {
@@ -34,9 +34,9 @@ Build a db.json with this code inside of it:
 }
 ```
 
-You may run it with `json-server --watch db.json`.
+You may run it with `json-server --watch db.json -p 4000`. When making fetch requests, you'll make them to `http://localhost:4000/songs`.
 
-When a song gets added or deleted, that persists in the json file. When the application loads, it makes a fetch request with `useEffect` to get the necessary data from the `db.json`.
+When a song gets added or deleted, it persists in the json file. When the application loads, it makes a fetch request with `useEffect` to get the necessary data from the `db.json`.
 
 ### BONUS: Styling
 
