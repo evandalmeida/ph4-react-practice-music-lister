@@ -6,6 +6,8 @@ Your goal here is to build a mini-project that'll list your favorite songs.
 
 First fork and clone the repository. You can start the project with `npm install` and `npm start`.
 
+Be sure to read the whole README before starting since it may be easier to build the core deliverables with the bonus features in mind!
+
 ## Requirements
 
 ### Songs State
@@ -35,6 +37,15 @@ There is already a db.json with this code inside of it:
 ```
 
 You may run it with `json-server --watch db.json -p 4000`. When making fetch requests, you'll make them to `http://localhost:4000/songs`.
+
+When making a `POST` request you may use these headers:
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+```
 
 When a song gets added or deleted, it persists in the json file. When the application loads, it makes a fetch request with `useEffect` to get the necessary data from the `db.json`.
 
