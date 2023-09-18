@@ -2,6 +2,7 @@ import React , { useState , useEffect } from "react";
 import MusicList from "./MusicList"
 import Form from "./Form"
 
+
 export default function App() {
   const [songs, setSongs] = useState([])
 
@@ -11,11 +12,13 @@ export default function App() {
     setSongs(songs.filter(song => song.id !== deletedSong.id))
   }
 
+
   useEffect( () => {
     fetch(`http://localhost:4000/songs`)
     .then(r=>r.json())
     .then(songs=>setSongs(songs))
   }, [])
+
 
   return (
     <div className="App">
